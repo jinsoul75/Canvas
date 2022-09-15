@@ -1,0 +1,128 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.color-palate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-option {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: #ffb700 solid 3px;
+  border-radius: 50%;
+  margin: 10px;
+  transition: width 0.1s, height 1s, background-color 1s, transform 1s;
+}
+
+.color-option:hover {
+  width: 50px;
+  height: 50px;
+  transform: rotate(180deg);
+}
+
+canvas {
+  width: 500px;
+  height: 500px;
+  border: 5px solid rgb(0, 153, 255);
+  background-color: white;
+  border-radius: 15px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  gap: 10px;
+}
+
+.linewidthcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linewidthcontainer p {
+  text-align: center;
+  margin: 5px;
+  color: #04aa6d;
+}
+
+#line-width {
+  border-radius: 15px;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.1s;
+  transition: opacity 0.1s;
+}
+
+#line-width:hover {
+  opacity: 1;
+}
+
+#line-width::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#line-width::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+#file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+
+.file-input label {
+  text-transform: uppercase;
+  border-radius: 15px;
+  background: #04aa6d;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+
+.file-input label:hover {
+  transform: scale(1.1);
+}
+
+button {
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  line-height: 2.5;
+  font-size: 1rem;
+  background-color: #ffb700;
+  border-radius: 15px;
+  color: blanchedalmond;
+}
+
+button:hover {
+  opacity: 80%;
+}
